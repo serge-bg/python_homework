@@ -30,7 +30,7 @@ french_to_english = {v: k for k, v in english_to_french.items()}  # other way to
 
 
 # Asking the user for a word they want to translate
-word_to_translate = input("Enter the word you want to translate (English or French): \t")
+word_to_translate = input("Enter the word you want to translate (English or French): \t").lower()
 
 # Translation logic based on input word
 if word_to_translate in english_to_french:
@@ -43,5 +43,3 @@ elif word_to_translate in french_to_english:
     
 else:
     print(f"'{word_to_translate}' is not in my dictionary.")
-
-
